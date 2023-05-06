@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static//styles/finish.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2>SPEEDE</h2>
+    </header>
+    <main>
+        {% block content %}
+        <div class="text__place">
+            <form action="/" method="post">
+                <div class="download__place">
+                    <h2>DOWNLOAD</h2>
+                    <h3> Download: {{ download }}</h3>
+                </div>
+                <div class="upload__place">
+                    <h2>Upload</h2>
+                    <h3> Upload: {{ upload }}</h3>
+                </div>
+                <div class="message__place">
+                    <h2>{{ message }}</h2>
+                </div>
+            </form>
+        </div>
+        {% endblock %}
+    </main>
+    <footer>
+        <p>@ SPEEDE</p>
+    </footer>
+</body>
+</html>

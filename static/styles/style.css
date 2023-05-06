@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+:root {
+    --blue: #25BFDE;
+    --red: #F971F3;
+}
+
+/* styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+body {
+    background-color: #141526;
+    font-family: 'Montserrat', sans-serif;
+    color: #DEDEED;
+    font-size: 20px;
+}
+
+/* header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h2 {
+    padding: 23px;
+}
+
+/* main */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body__main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.body__main .main__button__test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.main__button__test h3 {
+    margin: 10px;
+}
+
+.message {
+    color: white;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.main__button__test .button__start {
+    border: var(--blue) solid 10px;
+    border-radius: 100%;
+    width: 274px;
+    height: 274px;
+    background-color: transparent;
+    color: #DEDEED;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    animation: start 5s infinite;
+}
+
+.main__button__test .button__loader {
+    border: #F971F3 solid 10px;
+    animation: loading 5s infinite;
+}
+
+.main__button__test .speed__text {
+    margin-top: 20px;
+}
+
+/* footer */
+
+footer {
+    background-color: #090911;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: 30px;
+}
+
+@keyframes start {
+    0% {
+        box-shadow: 0px 0px 5px var(--blue);
+    }
+    50% {
+        box-shadow: 0px 0px 50px var(--blue);
+    }
+    100% {
+        box-shadow: 0px 0px 5px var(--blue);
+    }
+}
+
+@keyframes loading {
+    0% {
+        box-shadow: 0px 0px 5px var(--red);
+    }
+    50% {
+        box-shadow: 0px 0px 50px var(--red);
+    }
+    100% {
+        box-shadow: 0px 0px 5px var(--red);
+    }
+}
